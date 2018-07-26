@@ -5,6 +5,8 @@ branches:
 image: Previous Visual Studio 2017
 configuration: Release
 platform: Any CPU
+before_build:
+- cmd: nuget restore
 build:
   verbosity: minimal
 deploy:
